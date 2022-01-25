@@ -188,8 +188,10 @@ body {
 /* CSS for different size screens  */
 
 @media screen and (max-width: 800px) {
+   
+
     header {
-        padding-bottom: 0;
+        padding: 0 20%;
         justify-content: center;
         position: relative;
         width: 100%;
@@ -212,9 +214,10 @@ body {
 
     #about-me {
         align-items: center;
-        width: 100vw;
+        width: 100%;
         margin: 0;
-       
+        
+        padding: 20%;
     }
 
     #about-me-text {
@@ -223,15 +226,17 @@ body {
     }
 
     #about-me-photo {
-        width: 100%;
+        width: 60%;
     }
 
    .my-work {
       width: 100%;
+      padding: 22%;
     }
 
    .contact-me {
     width: 100%;
+    padding: 22%;
     }
 
     #my-work-text, 
@@ -246,5 +251,9 @@ body {
         border-right: none;
         margin-right: 0;
         text-align: center;
+    }
+
+    .contact-link {
+        justify-content:space-evenly;
     }
 }
