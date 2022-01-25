@@ -1,0 +1,149 @@
+/* header css */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+header {
+    padding: padding 40px 55px;
+    margin: 0;
+    border: 3px solid slategrey;
+    background-color: slategrey;
+    display: flex;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: lemonchiffon;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: lemonchiffon;
+    font-size: 30px;
+    padding: 0 15px;
+    font-weight: bolder;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/*               About Me Section CSS               */
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+    position: relative;
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    background: lemonchiffon;
+}
+
+#about-me-text {
+    width: 45%;
+}
+#about-me-text h2{
+    margin-left: 50px;
+}
+
+#about-me-text p {
+    margin: 50px 30px;
+}
+
+#about-me-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 50px 30px;
+}
+#about-me-text li{
+    margin: 15px 15px;
+}
+
+.about-me img {
+    padding: 5px;
+    width: 500px;
+    height: 350px;
+}
+
+.linebreaker {
+    width: 100%;
+}
+
+/*               My Work Section CSS              */
+
+.my-work {
+    width: 100%;
+    height: 100%;
+    background: slategrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#my-work-text {
+    width: 35%;
+    border-right: 5px solid black;
+    margin-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.my-work-links {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-project {
+    width: 90%;
+   
+} 
+.big-project img {
+    width: 100%;
+    height: 100%;
+}
+
+.little-project {
+    width: 45%;
+} 
+.little-project img {
+    width: 100%;
+    height: 100%;
+}
+
+/*           Contact Me Section CSS            */
+
+.contact-me {
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    background: lemonchiffon;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
