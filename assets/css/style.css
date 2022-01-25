@@ -187,11 +187,12 @@ body {
 
 /* CSS for different size screens  */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+        width: 100%;
     }
 
     header h1 {
@@ -209,21 +210,34 @@ body {
         font-size: 20px;
     }
 
-   .my-work {
-       flex-direction: column;
-       flex: 1;
-       background-color: chartreuse;
-   }
+    #about-me {
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+       
+    }
 
-   .contact-me{
+    #about-me-text {
+        width: 90%;
+        margin: 0;
+    }
+
+    #about-me-photo {
+        width: 100%;
+    }
+
+   .my-work {
+      width: 100%;
+    }
+
+   .contact-me {
     width: 100%;
-}
+    }
 
     #my-work-text, 
     .my-work-links,
     .contact-me h4,
-    .contact-link
-    {
+    .contact-link {
         width: 100%;
     }
 
