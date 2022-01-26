@@ -6,10 +6,16 @@
     }
 
 header {
+    background-image: url("../images/mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 86%;
     padding: padding 40px 55px;
-    margin: 0;
-    border: 3px solid slategrey;
-    background-color: slategrey;
+    margin:25px auto;
+    margin-top: 0;
+    border-bottom: 3px solid rgb(3, 71, 70);
+    color:rgb(3, 71, 70);
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
@@ -20,17 +26,16 @@ header {
 }
 
 header h1 {
-    color: lemonchiffon;
     font-style: italic;
     margin: 10px 0;
 }
 
 header a {
     text-decoration: none;
-    color: lemonchiffon;
     font-size: 30px;
     padding: 0 15px;
     font-weight: bolder;
+    color:rgb(3, 71, 70);
 }
 
 header nav {
@@ -38,8 +43,24 @@ header nav {
 }
 
 body {
-    background-color: white;
+    background-image: url("../images/mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*               Section Container CSS          */
+
+.section-container {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 11px -2px #000000;
+    
 }
 
 /*               About Me Section CSS               */
@@ -48,39 +69,49 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 60px;
     position: relative;
-    border: 3px solid black;
     width: 100%;
     height: 100%;
     background: lemonchiffon;
+    
 }
 
 #about-me-text {
-    width: 45%;
+    width: 60%;
+    padding-top: 20px;
+    
 }
 #about-me-text h2{
-    margin-left: 50px;
+    margin-left: 15%;
+    padding-top: 20px;
 }
 
-#about-me-text p {
-    margin: 50px 30px;
+#about-me-text p {   
+    margin: 2%;
 }
 
 #about-me-text ul {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    margin: 50px 30px;
+    margin: 5%;
 }
 #about-me-text li{
-    margin: 15px 15px;
+    margin: 5px 15px;
 }
 
-.about-me img {
+#about-me-photo {
+    width: 35%;
+    border-right: 5px solid black;
+    margin-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about-me-photo img {
     padding: 5px;
-    width: 500px;
-    height: 350px;
+    width: 95%;
+    height: auto;
 }
 
 .linebreaker {
@@ -99,7 +130,7 @@ body {
     
 }
 
-#my-work-text {
+.section-text {
     width: 35%;
     border-right: 5px solid black;
     margin-right: 20px;
@@ -143,22 +174,21 @@ body {
 /*           Contact Me Section CSS            */
 
 .contact-me{
-    padding: 60px;
+    width: 100%;
     height: 100%;
     background: lemonchiffon;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 .contact-me h4{
-    width: 35%;
-    border-right: 5px solid black;
-    margin-right: 20px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
 }
 
 .contact-link {
+    width: 23%;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 60%;
@@ -168,6 +198,7 @@ body {
 }
 .contact-link a {
     justify-content: center;
+    
 }
 
 .contact-link a img {
@@ -187,14 +218,16 @@ body {
 
 /* CSS for different size screens  */
 
-@media screen and (max-width: 800px) {
-   
+@media screen and (max-width: 820px) {
+    .section-container {
+        width: 85%;
+    }
 
     header {
-        padding: 0 20%;
         justify-content: center;
         position: relative;
-        width: 100%;
+        border: 3px solid black;
+        margin: 0 auto;
     }
 
     header h1 {
@@ -202,22 +235,18 @@ body {
         text-align: center;
     }
 
-    header nav ul {
+    header a {
         margin-top: 20px;
-        width: 100%;
+        width: 95%;
         justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #about-me {
         align-items: center;
         width: 100%;
-        margin: 0;
-        
-        padding: 20%;
+        margin: 0 auto;
+
     }
 
     #about-me-text {
@@ -226,17 +255,20 @@ body {
     }
 
     #about-me-photo {
-        width: 60%;
+        width: 90%;
+        border: none;
+    }
+    #about-me-photo {
+        width: 80%;
+        height: auto;
     }
 
    .my-work {
       width: 100%;
-      padding: 22%;
     }
 
    .contact-me {
     width: 100%;
-    padding: 22%;
     }
 
     #my-work-text, 
@@ -248,12 +280,16 @@ body {
 
     #my-work-text,
     .contact-me h4{
-        border-right: none;
         margin-right: 0;
         text-align: center;
+    }
+    
+    .section-text {
+        border: none;
     }
 
     .contact-link {
         justify-content:space-evenly;
     }
 }
+
