@@ -182,11 +182,6 @@ body {
     justify-content: center;
 }
 
-
-.contact-me h4{
-
-}
-
 .contact-link {
     width: 23%;
     padding-top: 60px;
@@ -216,7 +211,7 @@ body {
     width: 100%;
 }
 
-/* CSS for different size screens  */
+/*      Media Queries     */
 
 @media screen and (max-width: 820px) {
     .section-container {
@@ -252,11 +247,16 @@ body {
     #about-me-text {
         width: 90%;
         margin: 0;
+        padding: 0;
     }
+     #about-me-text ul {
+         flex-direction: column;
+     }
 
     #about-me-photo {
         width: 90%;
         border: none;
+        padding: 10px;
     }
     #about-me-photo {
         width: 80%;
@@ -265,6 +265,11 @@ body {
 
    .my-work {
       width: 100%;
+    }
+
+    .section-text {
+        padding: 20px;
+        width: 85%;
     }
 
    .contact-me {
@@ -288,8 +293,20 @@ body {
         border: none;
     }
 
+    .my-work-links a {
+        opacity: 1;
+        margin: 10px auto;
+    }
+
+    .little-project {
+        width: 90%;
+        opacity: 1;
+    }
+
     .contact-link {
-        justify-content:space-evenly;
+        justify-content:space-between;
+        padding: 20px;
+        font-size: 15px;
     }
 }
 
